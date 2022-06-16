@@ -1,0 +1,50 @@
+h1{
+    text-align: center;
+}
+
+.login{
+    margin-top: 10px;
+    height: 300px;
+    width: 400px;
+    padding: 20px;
+    margin-left: 200px;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom, #e075e1, #c281e5, #a689e2, #8f8eda, #7f91cd);
+}
+
+input{
+    height: 30px;
+    width: 300px;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+
+  }
+
+  label{
+    margin: 10px;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+
+  }
+
+  .btn{
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: red;
+    font-size: 20px;
+    margin: 10px 100px;
+    font-weight: bold;
+    color: white;
+    padding: 10px 10px;
+  }
+
+  a{
+    float: right;
+    margin: 10px;
+    font-size: 18px;
+    margin-top: 20px;
+  }
