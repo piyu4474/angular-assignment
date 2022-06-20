@@ -1,0 +1,44 @@
+h1{
+text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 400px;
+}
+
+.table1{
+    border: 1px solid;
+    padding: 10px;
+    margin: 0px 100px;
+    text-align: center;
+}
+table{
+    width: 880px;
+}
+
+.btn{
+margin: 10px;
+float: right;
+}
+.btn1 {
+    border: none;
+    background-color: inherit;
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: underline;
+}
+  .btn1:hover {background: #eee;}
+
+.success {color: green;}
+
+.btn2 {
+    border: none;
+    background-color: inherit;
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: underline;
+}
+  .btn1:hover {background: #eee;}
+
+.danger {color: red;}
