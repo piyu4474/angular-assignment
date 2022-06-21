@@ -1,1 +1,61 @@
-<router-outlet></router-outlet>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Binding Assignment</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+    <div class="header">
+     
+      <div class="header-right">
+    <div  class="right-img">
+      <img src="assets/pic.jpg" alt="" style="height: 50px;width: 50px;border-radius: 50%; margin: 10px;">
+    </div>
+
+       <div>
+        <p>{{name}}</p>
+        <p>{{email}}</p>
+       </div>
+      </div>
+  </div>
+      <form action="">
+        <h1>Simple Data Binding Form</h1>
+
+        <div class="container">
+          <form action="">
+            <div class="form-group">
+              <label for="name">User Name:</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter user name" name="name" [(ngModel)]="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" [(ngModel)]="email" required="">
+            </div>
+            <div class="form-group">
+              <label for="dob">Date of Birth:</label>
+              <input type="date" class="form-control" id="dob" placeholder="select DOB" name="dob" [(ngModel)]="age" required="">
+            </div>
+            <div [ngStyle]="{'color': age < 18 ? 'red' : 'green'}">*Please enter age greater than 18*</div>
+            <div [ngStyle]="{color: 'black'}">Calculated age is:{{age}}</div>
+
+            <button (click)="CalculateAge()" class="btn1">Calculate Age</button><br>
+
+            <div class="form-group">
+              <label for="phno">Phone No:</label>
+              <input type="tel" class="form-control" id="phno" maxlength="10" placeholder="Enter phone number" name="phno" [(ngModel)]="phno" required>
+            </div>
+           
+            <button type="submit" class="btn btn-primary btn2" (click)="save()">SAVE</button>
+          </form>
+        </div>
+      </form>
+</body>
+
+
+</html>
